@@ -6,7 +6,7 @@ import { Text, View } from 'react-native'
 export default class App extends Component {
   render() {
     return (
-      <Text style={{backgroundColor:'green',textAlign:'center'}}>Shyam Kumar Gautam</Text>
+      <Text style={{backgroundColor:'green',textAlign:'center'}}>Shyam Kumar Gautam !!</Text>
     )
   }
 }
