@@ -5,7 +5,7 @@ phases:
     runtime-versions:
       android: 29
       java: corretto8
-      nodejs: 14
+      nodejs: 12
     commands:
       - pwd
   pre_build:
