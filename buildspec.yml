@@ -39,7 +39,7 @@ artifacts:
 #     - ls
   files:
 #     - ./app/build/outputs/apk/app-debug.apk
-      - pipeline-four/SourceArti/app-debug.apk
+      - pipeline-four/SourceArti
 #       - /app/build/outputs/apk/release/*.apk
   discard-paths: yes
        
