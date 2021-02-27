@@ -163,6 +163,11 @@ android {
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
     }
+    
+     packagingOptions {
+        // exclude ARMEABI native so file, ARMEABI has been removed in NDK r17.
+        exclude "lib/armeabi/**"
+    }
 
     // applicationVariants are e.g. debug, release
     applicationVariants.all { variant ->
