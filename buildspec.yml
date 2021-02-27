@@ -37,8 +37,10 @@ artifacts:
 #     - pwd
 #     - echo running ls command
 #     - ls
-  files:
-      - target/app-debug.apk
+#   files:
+ files:
+    - '**/*'      
+#       - target/app-debug.apk
   #    -  codepipeline/pipeline-four cd ..
 #       - codepipeline-ap-south-1-339849233137/pipeline-four/SourceArti
 #       - /app/build/outputs/apk/release/*.apk
