@@ -4,15 +4,18 @@ phases:
     runtime-versions:
       android: 29
       java: openjdk11
-      nodejs: 14
+#       nodejs: 14
     commands:
       - pwd
   pre_build:
     commands:
       - echo Pre Build started on `date`
       - npm --version
+      - sudo apt install nodejs
+      - sudo apt install npm
+#       - yarn
+      - sudo apt install openjdk-8-jre openjdk-8-jdk
       - npm install -g react-native-cli
-      - yarn
       - react-native link
       - cd android
       - pwd
