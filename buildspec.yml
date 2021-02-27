@@ -33,5 +33,5 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - /app/build/outputs/apk/release/*.apk
+    - app/build/outputs/apk/app-debug.apk
   discard-paths: yes
