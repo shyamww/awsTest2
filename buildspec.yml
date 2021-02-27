@@ -5,28 +5,29 @@ phases:
     runtime-versions:
       android: 29
       java: corretto8
-#       nodejs: 14
+      nodejs: 14
     commands:
       - pwd
-#   pre_build:
-#     commands:
-#       - echo Pre Build started on `date`
-#       - npm --version
+  pre_build:
+    commands:
+      - echo Pre Build started on `date`
+      - npm --version
+      - npm install -g react-native-cli
 #       - sudo apt install nodejs
 #       - sudo apt install npm
-# #       - yarn
+      - yarn
 #       - sudo apt install openjdk-8-jre openjdk-8-jdk
-#       - npm install -g react-native-cli
-#       - react-native link
-#       - cd android
-#       - pwd
+
+      - react-native link
+      - cd android
+      - pwd
       
   build:
     commands:
       - echo Build started on `date`
       - ./gradlew clean
-#       - ./gradlew assembleRelease
-      - ./gradlew assembleDebug
+      - ./gradlew assembleRelease
+#       - ./gradlew assembleDebug
   post_build:
     commands:
       - echo Build completed on `date`
