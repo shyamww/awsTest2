@@ -32,8 +32,11 @@ phases:
     commands:
       - echo Build completed on `date`
 artifacts:
-  files:
+  commands:
+    - echo running PWD command
     - pwd
+    - echo running ls command
     - ls
+  files:
     - app/build/outputs/apk/app-debug.apk
   discard-paths: yes
