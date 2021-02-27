@@ -16,7 +16,7 @@ phases:
 #       - sudo apt install nodejs
 #       - sudo apt install npm
       - yarn
-      - apt install openjdk-8-jre openjdk-8-jdk
+#       - apt install openjdk-8-jre openjdk-8-jdk
 
       - react-native link
       - cd android
@@ -38,5 +38,6 @@ artifacts:
 #     - echo running ls command
 #     - ls
   files:
-    - app/build/outputs/apk/app-debug.apk
+#     - ./app/build/outputs/apk/app-debug.apk
+      - codepipeline-ap-south-1-339849233137/pipeline-four/SourceArti/app-debug.apk
 #   discard-paths: yes
