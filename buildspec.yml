@@ -16,7 +16,7 @@ phases:
 #       - sudo apt install nodejs
 #       - sudo apt install npm
       - yarn
-      - sudo apt install openjdk-8-jre openjdk-8-jdk
+      - apt install openjdk-8-jre openjdk-8-jdk
 
       - react-native link
       - cd android
