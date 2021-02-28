@@ -33,7 +33,8 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - /app/build/outputs/apk/release/*.apk
+    - /codebuild/outputs/apk/release/*.apk
+#     - /codebuild/output/src359644128/src
   discard-paths: yes
   
   
