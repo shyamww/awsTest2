@@ -32,25 +32,14 @@ phases:
     commands:
       - echo Build completed on `date`
 artifacts:
+#   commands:
+#     - echo running PWD command
+#     - pwd
+#     - echo running ls command
+#     - ls
   files:
-#     - /codebuild/outputs/apk/release/*.apk
-    - target/app-debug.apk
-#     - /codebuild/output/src359644128/src
+#     - ./app/build/outputs/apk/app-debug.apk
+      -  target/app-debug.apk
+ #     - codepipeline-ap-south-1-339849233137/pipeline-four/SourceArti cd ..
+#       - /app/build/outputs/apk/release/*.apk
   discard-paths: yes
-  
-  
-# artifacts:
-# #   commands:
-# #     - echo running PWD command
-# #     - pwd
-# #     - echo running ls command
-# #     - ls
-# #   files:
-#     files:
-#     - **/*    
-# #       - target/app-debug.apk
-#   #    -  codepipeline/pipeline-four cd ..
-# #       - codepipeline-ap-south-1-339849233137/pipeline-four/SourceArti
-# #       - /app/build/outputs/apk/release/*.apk
-#   discard-paths: yes
-       
