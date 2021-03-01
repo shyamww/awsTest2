@@ -34,7 +34,7 @@ phases:
 artifacts:
   files:
 #     - /codebuild/outputs/apk/release/*.apk
-    - app-debug.apk
+    - target/app-debug.apk
 #     - /codebuild/output/src359644128/src
   discard-paths: yes
   
