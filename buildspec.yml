@@ -42,7 +42,7 @@ artifacts:
 #     - ls
   files:
 #     - ./app/build/outputs/apk/app-debug.apk
-      -  ./android/app/build/outputs/apk/app-debug.apk
+      -  ./app/build/outputs/apk/release/app-release.apk
  #     - codepipeline-ap-south-1-339849233137/pipeline-four/SourceArti cd ..
 #       - /app/build/outputs/apk/release/*.apk
-  discard-paths: yes
+  discard-paths: no
