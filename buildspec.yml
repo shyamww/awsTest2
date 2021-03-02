@@ -11,10 +11,10 @@ phases:
   pre_build:
     commands:
       - echo Pre Build started on `date`
-      - npm --version
-      - npm install -g react-native-cli
-      - yarn
-      - react-native link
+#       - npm --version
+#       - npm install -g react-native-cli
+#       - yarn
+#       - react-native link
       - cd android
       - pwd
       
