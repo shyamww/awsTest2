@@ -3,9 +3,9 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      android: 29
-      java: corretto8
-      nodejs: 12
+#       android: 29
+#       java: corretto8
+#       nodejs: 12
     commands:
       - pwd
   pre_build:
@@ -29,7 +29,7 @@ phases:
       - echo Build completed on `date`
       - pwd
       - ls
-      - app/ls
+      - ls app/
 artifacts:
   #   commands:
   #     - echo running PWD command
