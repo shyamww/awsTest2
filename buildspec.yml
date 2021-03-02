@@ -42,4 +42,4 @@ artifacts:
         - echo artifacts completed on `date`
 #         - ls
         -  app/build/outputs/apk/release/app-release.apk
-  discard-paths: no
+  discard-paths: yes
