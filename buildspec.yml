@@ -31,6 +31,9 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
+#       - echo Build completed on `date`
+      - pwd
+      - ls
 artifacts:
 #   commands:
 #     - echo running PWD command
@@ -39,7 +42,7 @@ artifacts:
 #     - ls
   files:
 #     - ./app/build/outputs/apk/app-debug.apk
-      -  app/build/outputs/apk/app-debug.apk
+      -  ./android/app/build/outputs/apk/app-debug.apk
  #     - codepipeline-ap-south-1-339849233137/pipeline-four/SourceArti cd ..
 #       - /app/build/outputs/apk/release/*.apk
   discard-paths: yes
