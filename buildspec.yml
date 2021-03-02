@@ -13,11 +13,7 @@ phases:
       - echo Pre Build started on `date`
       - npm --version
       - npm install -g react-native-cli
-#       - sudo apt install nodejs
-#       - sudo apt install npm
       - yarn
-#       - apt install openjdk-8-jre openjdk-8-jdk
-
       - react-native link
       - cd android
       - pwd
@@ -25,24 +21,21 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - ./gradlew clean
-      - ./gradlew assembleRelease
-#       - ./gradlew assembleDebug
+#       - ./gradlew clean
+#       - ./gradlew assembleRelease
+# #   - ./gradlew assembleDebug
   post_build:
     commands:
       - echo Build completed on `date`
-#       - echo Build completed on `date`
       - pwd
       - ls
+      - app/ls
 artifacts:
-#   commands:
-#     - echo running PWD command
-#     - pwd
-#     - echo running ls command
-#     - ls
+  #   commands:
+  #     - echo running PWD command
+  #     - pwd
+  #     - echo running ls command
+  #     - ls
   files:
-#     - ./app/build/outputs/apk/app-debug.apk
-      -  ./app/build/outputs/apk/release/app-release.apk
- #     - codepipeline-ap-south-1-339849233137/pipeline-four/SourceArti cd ..
-#       - /app/build/outputs/apk/release/*.apk
-  discard-paths: no
+      -  app/build/outputs/apk/release/app-release.apk
+  discard-paths: yes
