@@ -40,6 +40,6 @@ artifacts:
       commands:
         - pwd
         - echo under artifacts section
-        - ls
+#         - ls
       -  app/build/outputs/apk/release/app-release.apk
   discard-paths: yes
