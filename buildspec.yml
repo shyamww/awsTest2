@@ -30,6 +30,10 @@ phases:
       - pwd
       - ls
       - ls app/
+      - ls app/build/
+      - ls app/build/outputs/
+      - ls app/build/outputs/apk/
+      - ls app/build/outputs/apk/release/
 artifacts:
   #   commands:
   #     - echo running PWD command
@@ -37,9 +41,5 @@ artifacts:
   #     - echo running ls command
   #     - ls
   files:
-      commands:
-        - pwd
-        - echo artifacts completed on `date`
-#         - ls
-        -  app/build/outputs/apk/release/app-release.apk
+    -  app/build/outputs/apk/release/app-release.apk
   discard-paths: yes
