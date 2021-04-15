@@ -33,7 +33,7 @@ phases:
       - ls app/build/
       - ls app/build/outputs/
       - ls app/build/outputs/apk/
-      - ls app/build/outputs/apk/release/
+      - ls app/build/outputs/apk/release/ 
 artifacts:
   #   commands:
   #     - echo running PWD command
